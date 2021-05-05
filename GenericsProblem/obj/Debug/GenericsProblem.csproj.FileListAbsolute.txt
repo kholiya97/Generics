@@ -1,0 +1,7 @@
+C:\Users\kholi\source\repos\GenericsProblem\GenericsProblem\bin\Debug\GenericsProblem.exe.config
+C:\Users\kholi\source\repos\GenericsProblem\GenericsProblem\bin\Debug\GenericsProblem.exe
+C:\Users\kholi\source\repos\GenericsProblem\GenericsProblem\bin\Debug\GenericsProblem.pdb
+C:\Users\kholi\source\repos\GenericsProblem\GenericsProblem\obj\Debug\GenericsProblem.csprojAssemblyReference.cache
+C:\Users\kholi\source\repos\GenericsProblem\GenericsProblem\obj\Debug\GenericsProblem.csproj.CoreCompileInputs.cache
+C:\Users\kholi\source\repos\GenericsProblem\GenericsProblem\obj\Debug\GenericsProblem.exe
+C:\Users\kholi\source\repos\GenericsProblem\GenericsProblem\obj\Debug\GenericsProblem.pdb
