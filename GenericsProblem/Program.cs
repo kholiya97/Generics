@@ -9,45 +9,50 @@ namespace GenericsProblem
     public class MaximumNumbers
     {
         /// <summary>
-        /// This method returns largest numbers among all 3 float numbers 
+        /// This method returns largest string among all 3 string
         /// </summary>
-        /// <param name="firstValue">firstValue is of float type</param>
-        /// <param name="secondValue">secondValue is of float type</param>
-        /// <param name="thirdValue">thirdValue is of float type</param>
+        /// <param name="firstValue">firstValue is of string type</param>
+        /// <param name="secondValue">secondValue is of string type</param>
+        /// <param name="thirdValue">thirdValue is of string type</param>
         /// <returns></returns>
-        public static float MaxFloatNumber(float firstnumb, float secondnumb, float thirdnumb)
+        public static string StringMaximumNumber(string S1, string S2, string S3) //static method
         {
-            if (firstnumb.CompareTo(secondnumb) > 0 && firstnumb.CompareTo(thirdnumb) > 0)
+            if (S1.CompareTo(S2) > 0 && S1.CompareTo(S3) > 0)
             {
-                return firstnumb;
+                return S1;
             }
-            else if (secondnumb.CompareTo(firstnumb) > 0 && secondnumb.CompareTo(thirdnumb) > 0)
+            if (S2.CompareTo(S1) > 0 && S2.CompareTo(S3) > 0)
             {
-                return secondnumb;
+                return S2;
             }
-            else if (thirdnumb.CompareTo(firstnumb) > 0 && thirdnumb.CompareTo(secondnumb) > 0)
+            if (S3.CompareTo(S1) > 0 && S3.CompareTo(S2) > 0)
             {
-                return thirdnumb;
+                return S3;
             }
-            else
-            {
-                Console.WriteLine("all 3 numbers are same");
-                return 0;
-            }
+            throw new Exception("S1,S2,S3 are Same ");
         }
+
+
     }
+
     class Program
     {
+        /// <summary>
+        /// Entery point
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
 
             Console.WriteLine("Welcome To Find MaximumProblem using Generics");
-
-            Console.WriteLine(MaximumNumbers.MaxFloatNumber(7.6f, 6.5f, 2.2f));
-            Console.WriteLine(MaximumNumbers.MaxFloatNumber(7.6f, 66.5f, 3f));
-            Console.WriteLine(MaximumNumbers.MaxFloatNumber(7.46f, 65.5f, 231.2f));
+          
+            ///string 
+            Console.Write("Maximum String is : ");
+            string StringOutput = MaximumNumbers.StringMaximumNumber("Apple", "Peach", "Banana");
+            Console.Write(StringOutput);
 
             Console.Read();
         }
     }
 }
+
